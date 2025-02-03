@@ -4,14 +4,15 @@ pipeline {
 		stage('Build') 
 		{
 			steps {
-				echo 'Build Worldhjkhgkjg'
+				echo 'Build World hjkhgkjg'
 				}
 		}
 		stage('Deploy') 
 		{
 			steps 
 				{
-				echo 'Depoly World'				}
+				echo 'Depoly World'
+				}
 		}	
 		stage('Test') 
 		{
@@ -25,7 +26,7 @@ pipeline {
 		{
 			always
 			{
-			emailext body: 'Summary' , subject: 'Pipeline Status' , to: 'baljinderkaur659192@gmail.com'
+				emailext body:'Summary' , subject:'Pipeline Status' , to:'baljinderkaur659192@gmail.com'
 			}
 		}
 	}			
