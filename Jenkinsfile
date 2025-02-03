@@ -4,7 +4,7 @@ pipeline {
 		stage('Build') 
 		{
 			steps {
-				echo 'Build World'
+				echo 'Build Worldhjkhgkjg'
 				}
 		}
 		stage('Deploy') 
